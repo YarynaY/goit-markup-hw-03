@@ -1,0 +1,198 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
+}
+/* усування . і підкреслень в посиланнях */
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+/* CSS - змінні */
+:root {
+--logo-color: #4D5AE5;
+--header-logo-color: #2E2F42;
+--link-color: #2e2f42;
+--title-background: #2E2F42;
+--main-title-color: #FFFFFF;
+--button-order-background: #4D5AE5;
+--button-order-color: #FFFFFF;
+--link-hover-focus-color: #404bbf;
+--button-hover-focus-background: #404BBF;
+--our-team-background: #F4F4FD;
+--footer-text-color: #F4F4FD;
+--footer-background: #2E2F42;
+--footer-logo-color: #F4F4FD;
+--pagination-button-color: #4D5AE5;
+--pagination-button-background: #F4F4FD;
+--pagination-hover-focus-color: #FFFFFF;
+--pagination-hover-focus-background:#404BBF;
+--objective-item-title-color:#2e2f42;
+--job-title-color: #2e2f42;
+--team-title-color: #2e2f42;
+--our-team-list-background: #FFFFFF;
+--link-addres-color:#434455;
+--benefits-item-title-color: #2e2f42;
+--benefits-item-text-color: #434455;
+}
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;  
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+  }
+/* inherit - наслідування шрифта; */
+/* font-style: normal - тільки для посилань; */
+/* header */
+.logo {
+font-family: "Raleway", sans-serif;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+.logo {
+color: var(--header-logo-color);
+}
+.header-logo {
+color: var(--logo-color);
+}
+.header-link {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--link-color);
+}
+.header-link:hover,
+.header-link:focus {
+color: var(--link-hover-focus-color)
+}
+.header-addres-link:hover,
+.header-addres-link:focus {
+color: var(--link-hover-focus-color)
+}
+.header-addres{
+font-style: normal; 
+}
+.header-addres-link {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--link-addres-color);
+}
+/* main */
+.item-title {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;    
+}
+.item-text {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+}
+/* title */
+.title {
+background-color: var(--title-background);
+}
+.main-title{
+font-size: 56px;
+line-height: 1.07;
+letter-spacing: 0.02em;
+text-align: center;
+color: var(--main-title-color);
+}
+.button-order {
+cursor: pointer;
+background-color: var(--button-order-background);
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: var(--button-order-color);
+}
+.button-order:hover,
+.button-order:focus {
+background-color: var(--button-hover-focus-background);
+}
+/* section-objective */
+.objective-item-title {
+color: var(--objective-item-title-color);
+}
+/* section - What are we doing */
+.job-title {
+color: var(--job-title-color)
+}
+/* section - Our team */
+.title-h {
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-align: center;
+text-transform: capitalize;
+color: var(--team-title-color);
+}
+.team-item-title{
+color: var(--team-title-color);
+}
+.our-team {
+background: var(--our-team-background)
+}
+.our-team-item {
+background-color: var(--our-team-list-background);
+}
+/* footer */
+.footer {
+background-color: var(--footer-background)}
+.footer-logo-studio {
+color: var(--footer-logo-color);
+}
+.footer-logo{
+color:  #4D5AE5;;
+}
+.footer-text {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--footer-text-color);
+}
+/* Portfolio */
+/* maim */
+.pagination-button {
+font-family: inherit;
+cursor: pointer;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: var(--pagination-button-color);
+background-color: var(--pagination-button-background)
+}
+.pagination-button:hover,
+.pagination-button:focus {
+color: var(--pagination-hover-focus-color);
+}
+.pagination-button:hover,
+.pagination-button:focus {
+background-color: var(--pagination-hover-focus-background);
+}
+.benefits-item-title{
+color: var(--benefits-item-title-color);
+}
+.benefits-item-text{
+color: var(--benefits-item-text-color);
+}
+
+ 
