@@ -72,9 +72,11 @@ img {
 /* header */
 .header-navigation {
     display: flex;
+    align-items: center;
 }
 .header-container { 
     display: flex;
+    margin: 0 auto;
 }
 .header {
     border-bottom: 1px solid #E7E9FC;
@@ -108,6 +110,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--link-color);
+padding: 24px 0;
 }
 .header-link:hover,
 .header-link:focus {
@@ -134,7 +137,9 @@ letter-spacing: 0.02em;
 color: var(--link-addres-color);
 }
 /* main */
-
+.title {
+    padding: 188px 0;
+}
 .item-title {
 font-weight: 500;
 font-size: 20px;
@@ -159,7 +164,6 @@ text-align: center;
 color: var(--main-title-color);
 max-width: 496px;
 margin: 0 auto;
-padding-top: 188px;
 margin-bottom: 48px;
 }
 .button-order {
@@ -176,26 +180,35 @@ border-radius: 4px;
 display: block;
 margin-right: auto;
 margin-left: auto;
-width: 169px;
+min-width: 169px;
 height: 56px;
+bottom: none;
 }
 .button-order:hover,
 .button-order:focus {
 background-color: var(--button-hover-focus-background);
 }
 /* section-objective */
+.objective {
+    padding: 120px 0;
+}
 .objective-item-title {
 color: var(--objective-item-title-color);
+margin-bottom: 8px;
 }
 .objective-list{
     display: flex;
    padding-left: auto;
    padding-right: auto;
    gap: 24px;
-   padding-bottom: 120px;
-   padding-top: 120px;
+}
+.objective-item {
+    width: calc((100%-72) / 4);
 }
 /* section - What are we doing */
+.our-job {
+    padding-bottom: 120px;
+}
 .job-title {
 color: var(--job-title-color);
 margin-bottom: 72px;
@@ -204,10 +217,14 @@ padding: auto;
 .our-job-list {
     display: flex;
     gap: 24px;
-    padding-bottom: 120px;
+}
+.our-job-item {
     width: calc((100%-48px) / 3) ;
 }
 /* section - Our team */
+.our-team {
+    padding: 120px 0;
+}
 .title-h {
 font-size: 36px;
 line-height: 1.11;
@@ -215,32 +232,34 @@ letter-spacing: 0.02em;
 text-align: center;
 text-transform: capitalize;
 color: var(--team-title-color);
-padding-top: 120px;
 padding-left: auto;
 padding-right: auto;
 margin-bottom: 72px;
+}
+.position {
+padding: 32px 16px;
 }
 .our-team-list {
     display: flex;
     gap: 24px;
     padding-left: auto;
     padding-right: auto;
-    padding-bottom: 120px;
-    width: calc((100%-72px) / 4);
 }
 .team-item-title {
 color: var(--team-title-color);
 text-align: center;
 margin-bottom: 8px;
-padding-top: 32px;
+}
+.our-team-text {
+    text-align: center;
 }
 .our-team {
 background: var(--our-team-background)
 }
 .our-team-item {
 background-color: var(--our-team-list-background);
-text-align: center;
-padding-bottom: 32px;
+width: calc((100%-72px) / 4);
+border-radius: 0px 0px 4px 4px; 
 }
 /* footer */
 .footer-container{
@@ -251,9 +270,14 @@ padding-bottom: 32px;
 background-color: var(--footer-background)}
 .footer-logo-studio {
 color: var(--footer-logo-color);
+padding: 100px 0;
 }
 .footer-logo {
 color:  #4D5AE5;
+}
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .footer-text {
 font-size: 16px;
@@ -261,16 +285,14 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--footer-text-color);
 max-width: 264px;
-margin-top: 16px;
 }
 /* Portfolio */
 /* maim */
-.benefits-container {
-    
+.pagination {
+    margin: 96px 0 120px;
 }
 .pagination-list {
     display: flex;
-    padding-top: 96px;
     gap: 24px;
  justify-content: center;
 margin-bottom: 72px;
@@ -287,11 +309,11 @@ background-color: var(--pagination-button-background);
 border: 1px solid #E7E9FC;
 border-radius: 4px;
 display: block;
+padding: 12px 24px;
 }
 .benefits-list {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 120px;
     column-gap: 24px;
     row-gap: 48px;
 }
@@ -299,28 +321,22 @@ display: block;
 border-left: 1px solid #E7E9FC;
 border-right: 1px solid #E7E9FC;
 border-bottom: 1px solid #E7E9FC;
+padding: 32px 16px;
 }
 .benefits-item {
  width: calc((100%-48px) / 3);
  max-width: 360px;
 }
 .benefits-item-title {
-    padding-top: 32px;
-    padding-left: 16px;
     margin-bottom: 8px;
-}
-.benefits-item-text {
-    padding-bottom: 32px;
-    padding-left: 16px;
 }
 .pagination-button:hover,
 .pagination-button:focus {
 color: var(--pagination-hover-focus-color);
-}
-.pagination-button:hover,
-.pagination-button:focus {
 background-color: var(--pagination-hover-focus-background);
+border: 1px solid transparent;
 }
+
 .benefits-item-title{
 color: var(--benefits-item-title-color);
 }
