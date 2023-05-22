@@ -38,7 +38,7 @@ ul {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: o auto;
+  margin: 0 auto;
 }
 img {
   display: block;
@@ -47,7 +47,7 @@ img {
 /* CSS - змінні */
 :root {
   --logo-color: #4d5ae5;
-  --header-logo-color: #2e2f42;
+  --header-logo-studio-color: #2E2F42;
   --link-color: #2e2f42;
   --title-background: #2e2f42;
   --main-title-color: #ffffff;
@@ -88,7 +88,6 @@ img {
   align-items: center;
 }
 .header-logo {
-  color: var(--logo-color);
   padding-bottom: 24px;
   padding-top: 24px;
   margin-right: 76px;
@@ -100,9 +99,10 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--logo-color);
 }
-.logo {
-  color: var(--header-logo-color);
+.logo-studio {
+color: var(--header-logo-studio-color);
 }
 .header-list {
   display: flex;
